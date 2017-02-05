@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Network Infrastructure</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="bower_components/reveal.js/css/theme/sky.css" id="theme">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'bower_components/reveal.js/css/print/'
+            + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <h2>Network Infrastructure</h2>
+    </section>
+    <section>
+      <h3>
+        Introduction
+      </h3>
+      <ul>
+        <li class="fragment">Hardware and software resources of an entire network</li>
+        <li class="fragment">Provides the communication path and services between users, processes, applications, services and external networks/the Internet.</li>
+        <li class="fragment">Interconnected group of computer systems linked by the various parts of a telecommunications architecture</li>
+        <li class="fragment">Infrastructures can be either open or closed</li>
+      </ul>
+    </section>
+    <section>
+      <h3>
+        Networking Hardware
+      </h3>
+      <ul>
+        <li>Routers</li>
+        <li>Switches</li>
+        <li>LAN cards</li>
+        <li>Wireless routers</li>
+        <li>Cables</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Networking Software</h3>
+      <ul>
+        <li>Network operations and management</li>
+        <li>Operating systems</li>
+        <li>Firewall</li>
+        <li>Network security applications</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Network Service</h3>
+      <ul>
+        <li>DSL</li>
+        <li>Wireless protocols</li>
+        <li>IP addressing</li>
+        <li>T-1 Line</li>
+      </ul>
+    </section>
+    <section>
+      <img src="img/campus-network-structure.png" alt="Campus Network Structure"/>
+    </section>
+    <section>
+      <section>
+        <h3>I-way</h3>
+        <p>Information Superhighway will allow us to share information, to connect, and to communicate as a global community.</p>
+      </section>
+      <section>
+        <h3>I-way</h3>
+        <ul>
+          <li>a physical network, an infrastructure of modern high-speed links</li>
+          <li>links everyone at home or office to everything else</li>
+          <li>in practicality it is identical to internet provided -connections are broadband -they are continuously running</li>
+          <li>as internet develops into I-way, changes will take place in infrastructure not in internet</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Components of I-way</h3>
+        <img src="img/i-way infrastructure.png" alt="I-way infrastructure">
+        <aside class="notes">
+          NETWORK ACCESS EQUIPMENT
+          hardware and software vendors: who provide
+          set-top boxes
+          computers
+          switches, hubs, routers
+          software platforms such as browser operating systems
+
+          LOCAL ON-RAMPS
+          wiring linking homes with backbone
+          requirement of huge investment
+          also known as “last mile”
+          divided into four categories:
+          telecom based infrastructure
+          cable tv-based infrastructure
+          wireless infrastructure
+          commercial online infrastructure
+
+          GLOBAL INFORMATION DISTRIBUTION NETWORK
+          long distance network
+          satellite networks
+        </aside>
+      </section>
+    </section>
+    <section>
+      <h2>Thank you!</h2>
+    </section>
+  </div>
+
+</div>
+
+<script src="bower_components/headjs/dist/1.0.0/head.min.js"></script>
+<script src="bower_components/reveal.js/js/reveal.js"></script>
+
+<script>
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {
+        src: 'bower_components/reveal.js/lib/js/classList.js', condition: function () {
+        return !document.body.classList;
+      }
+      },
+      {
+        src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      },
+      {src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true},
+      {src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true}
+    ],
+    keyboard: {
+      39: 'next',
+      37: 'prev'
+    }
+  });
+</script>
+
+</body>
+</html>
